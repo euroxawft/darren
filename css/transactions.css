@@ -1,0 +1,15 @@
+main{
+    background-color: rgba(77, 162, 211, 0.2);
+    min-height: 60vh;
+}
+table.table-striped th{
+    color: rgb(43, 131, 218);
+}
+footer p.links a{
+    display: inline;
+}
+footer p.links a img{
+    display: inline;
+    width: 100px;
+    height: 70px;
+}

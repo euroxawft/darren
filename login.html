@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper2.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand ms-3"><img src="images/barclays.png" width="200" alt="logo"></a>
+                    <div class="collapse navbar-collapse justify-content-end me-3">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="https://bank.barclays.co.uk/olb/registration/registerAppContainer.do" class="nav-link"><i class="fa fa-unlock"></i> Secure</a></li>
+                        </ul>
+                    </div>
+        </nav>
+    </header>
+    <main>
+        <section id="sect1">
+            <div class="mb-4 py-5 mx-5 ps-5 container">
+                <div class="container mx-5 border-start border-primary border-4 ps-2">
+                    <h5 class="light">Log in to Online Banking</h5>
+                </div>
+            </div>
+        </section>
+        <section id="sect2">
+            <div class="container ps-5 ">
+                <h5 class="light pb-4">
+                    How would you like to log in?
+                </h5>
+                <p class="fs-6">Not registered for Online Banking? <a href="https://bank.barclays.co.uk/olb/registration/registerAppContainer.do">Register now</a></p>
+            </div>
+        </section>
+        <section id="sect3">
+            <div class="container my-4 py-3 px-5 border-bottom">
+             <div class="border-bottom buttonNav mb-4">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><button id="firstForm" class="nav-link active px-4 py-3">Membership number</button></li>
+                    <li class="nav-item"><button id="secondForm" class="nav-link px-4 py-3">Card number</button></li>
+                    <li class="nav-item"><button id="thirdForm" class="nav-link px-4 py-3">Sort and account number</button></li>
+                </ul>
+             </div>
+               <div class="firstForm forms">
+                <form class="needs-validation" method="post" id="loginForm1">
+                    <div class="form-group mb-3">
+                        <label class="pb-2 fs-6">Last name</label>
+                        <input type="text" name="" id="last_name1" class="form-control px-3 py-2">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label class="pb-2 fs-6">Membership Number (12 digits)</label>
+                        <input type="tel" name="" id="mem_number" class="form-control px-3 py-2">
+                    </div>
+                    <a href="javascript:void(0)">Don't know your membership number</a>
+                    <div class="form-check mt-3">
+                        <input type="checkbox" class="p-3 form-control form-check-input me-3"><p><a href="#" style="text-decoration: none;">Remember my last name and login method</a> <br> Don't tick the box if you're using a public or shared device</p>
+                    </div>
+                    <div class="form-group mt-5">
+                        <button type="submit" class="btn px-3 py-2 btn-primary rounded-pill">Continue</button>
+                    </div>
+                </form>
+               </div>
+               <div class="secondForm forms d-none">
+                <form class="needs-validation" method="post" id="loginForm2">
+                    <div class="form-group mb-3">
+                        <label class="pb-2 fs-6">Last name</label>
+                        <input type="text" name="" id="last_name2" class="form-control px-3 py-2">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label class="pb-2 fs-6">Card Number (16 digits)</label>
+                        <input type="tel" name="" id="card_number" class="form-control px-3 py-2">
+                    </div>
+                    <a href="javascript:void(0)">Don't know your membership number</a>
+                    <div class="form-check mt-3">
+                        <input type="checkbox" class="p-3 form-control form-check-input me-3"><p><a href="#" style="text-decoration: none;">Remember my last name and login method</a> <br> Don't tick the box if you're using a public or shared device</p>
+                    </div>
+                    <div class="form-group mt-5">
+                        <button type="submit" class="btn px-3 py-2 btn-primary rounded-pill">Continue</button>
+                    </div>
+                </form>
+               </div>
+               <div class="thirdForm forms d-none">
+                <form class="needs-validation" method="post" id="loginForm3">
+                    <div class="form-group mb-3">
+                        <label class="pb-2 fs-6">Last name</label>
+                        <input type="text" name="" id="last_name3" class="form-control px-3 py-2">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="pb-2 fs-6">Sort Code</label>
+                     <div class="mt-2">
+                        <input type="text" name="" id="sort_code1" class="form-control px-3 py-2 sorts me-2" maxlength="2">
+                        <input type="text" name="" id="sort_code2" class="form-control px-3 py-2 sorts me-2" maxlength="2">
+                       <input type="text" name="" id="sort_code3" class="form-control px-3 py-2 sorts" maxlength="2">
+                     </div>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label class="pb-2 fs-6">Account Number</label>
+                        <input type="tel" name="" id="account_number" class="form-control px-3 py-2">
+                    </div>
+                    <a href="javascript:void(0)">Don't know your membership number</a>
+                    <div class="form-check mt-3">
+                        <input type="checkbox" class="p-3 form-control form-check-input me-3"><p><a href="#" style="text-decoration: none;">Remember my last name and login method</a> <br> Don't tick the box if you're using a public or shared device</p>
+                    </div>
+                    <div class="form-group mt-5">
+                        <button type="submit" class="btn px-3 py-2 btn-primary rounded-pill">Continue</button>
+                    </div>
+                </form>
+               </div>
+            </div>
+        </section>
+        <section id="sect4">
+            <div class="rgb mt-2 pt-4">
+                <div class="container px-5">
+                    <h5 class="light pb-1">
+                        Frequently asked questions
+                    </h5>
+                    <div class="accordion accordion-flush border mb-2" id="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#col1">Service status</button></h2>
+                            <div id="col1" class="collapse accordion-collapse">
+                                <div class="accordion-body px-5">
+                                    <p>To check how our services are running and see our planned maintenance, head to <a href="https://status.uk.barclays/">status.uk.barclays</a> or type ‘status.barclays’ into your browser.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#col2">Is my saving details safe</button></h2>
+                            <div id="col2" class="collapse accordion-collapse">
+                                <div class="accordion-body px-5">
+                                    <p class="pb-3">If you tick the 'remember me' box, your details will only be retained on the device you're using at the time. That's why we don't recommend you do so on any public or shared devices. This means you don't need to worry about anyone else seeing the details. Even if they do, there isn't enough information there for anyone to access your accounts in Online Banking or any other way.</p>
+                                    <p class="pb-2">If you want to save your details, you need to make sure you've switched cookies on for your browser – that's how the information is stored.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#col3">What does error code 6 means</button></h2>
+                            <div id="col3" class="collapse accordion-collapse">
+                                <div class="accordion-body px-5">
+                                    <p class="pb-3 pt-3">If you're having problems logging in to Online Banking, you may need to clear your internet browser's cache or update the browser.</p>
+                                    <p class="pb-4">Below is a guide to clearing the cache for the most common browsers. You can also find the information in your browser's 'help' section.</p>
+                                    <h5 class="light pb-3"><strong>PC users:</strong></h5>
+                                    <p class="pb-3"><strong>Internet Explorer (IE)</strong> - press <b>Ctrl, Shift</b> and <b>Delete</b> together, then select 'temporary internet files' and click 'delete'</p>
+                                    <p class="pb-3"><strong>Chrome</strong> - press <b>Ctrl, Shift</b> and <b>Delete</b> together. In the 'clear browsing data window', select 'cached images and files' only, then click 'clear browsing data'</p>
+                                    <p class="pb-3"><strong>Firefox</strong> - press <b>Ctrl, Shift</b> and <b>Delete</b> together, then select 'clear recent history', select 'cache' only within 'details', then click 'clear now'</p>
+                                    <p class="pb-3"><strong>Safari</strong> - press <b>Ctrl, Alt</b> and the letter<b>E</b> together, then select 'empty'</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#col4">How to reset your memorable word and passcode</button></h2>
+                            <div id="col4" class="collapse accordion-collapse">
+                                <div class="accordion-body px-5">
+                                    <p>If you need help resetting your memorable word and passcode, you can <a href="https://www.barclays.co.uk/help/online-banking/login/setup-passcode-word/">find out how</a> or watch our video.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#col5">How do I login with mobile PINsentry</button></h2>
+                            <div id="col5" class="collapse accordion-collapse">
+                                <div class="accordion-body px-5">
+                                    <p class="pt-2 pb-3">If you haven't logged in to the app, tap the 'PINsentry' button in the top left-hand corner of the log-in screen.</p>
+                                    <p class="pb-3">If you're already logged in, tap the menu icon in the top left-hand corner and then select 'Mobile PINsentry' from the list.</p>
+                                    <p class="pb-3">Once you're on the Mobile PINsentry page, select 'Identify' and follow the on-screen instructions.</p>
+                                    <p class="pb-3">Watch our video to find out how to use Mobile PINsentry at <a href="https://www.barclays.co.uk/help/mobile-banking/pinsentry/info/">www.barclays.co.uk/help/mobile-banking/pinsentry/info/</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.barclays.co.uk/help/contact-us/" class="btn border border-primary text-primary rounded-pill mb-3 px-3 py-2">Need more help</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="container px-5">
+            <ul class="mt-4 nav mb-3">
+            <li class="nav-item"><a href="https://status.uk.barclays/" class="nav-link mx-5">Service status</a></li>
+            <li class="nav-item"><a href="http://www.barclays.co.uk/Contactus/Contactus/P1242561757335" class="nav-link mx-5">Contact us</a></li>
+            <li class="nav-item"><a href="http://www.barclays.co.uk/security" class="nav-link mx-5">Security</a></li>
+            <li class="nav-item"><a href="http://www.barclays.co.uk/accessibility/" class="nav-link mx-5">Accessibility</a></li>
+        </ul>
+
+    <div class="px-5">
+        <a href="https://www.barclays.co.uk/important-information/cookies-policy/">See our cookies policy</a>
+        <p class="py-3">Barclays Bank UK PLC and Barclays Bank PLC are each authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority.</p>
+        <p class="pb-3">Barclays Insurance Services Company Limited and Barclays Investment Solutions Limited are each authorised and regulated by the Financial Conduct Authority.</p>
+        <p class="pb-2">Registered office for all: 1 Churchill Place, London E14 5HP</p>
+        <p class="pb-4 links"><a href="http://www.bsigroup.com/"><img src="images/wtb_kite_bsi_16_9.xxsmall.medium_quality.jpg" alt="kitelogo_v"></a> <a href="https://www.iso.org/isoiec-27001-information-security.html"><img src="images/wtb_kite_ISO_IEC-27001_16_9.xxsmall.medium_quality.jpg" alt="wtbkite_i"></a> <a href="https://www.barclays.co.uk/digisafe/"><img src="images/wtb_kite_cyber_16_9.xxsmall.medium_quality.jpg" alt="wtbkite_c"></a> <a href="https://www.fscs.org.uk/"><img src="images/FSCS_logo_v3.medium.medium_quality.jpg" alt="fscs_logo"></a></p>
+       
+  
+    </div>   
+    </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

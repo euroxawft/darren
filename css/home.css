@@ -1,0 +1,31 @@
+main{
+    background-color: rgba(77, 162, 211, 0.2);
+    min-height: 60vh;
+}
+table.table th, table.table td{
+    color: grey;
+}
+table.firstTables td{
+    padding-top: 12px;
+}
+td.firstRow{
+    width: fit-content;
+    border: 1px solid black;
+}
+button.btn-sm.btn-success{
+    width: fit-content;
+}
+div.card{
+    color: grey;
+}
+ul.list-group > li.list-item{
+    list-style: none;;
+}
+footer p.links a{
+    display: inline;
+}
+footer p.links a img{
+    display: inline;
+    width: 100px;
+    height: 70px;
+}

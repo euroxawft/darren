@@ -1,0 +1,73 @@
+div.firstNav{
+    background-color: rgba(149, 245, 245, 0.2)
+}
+div.firstNav a{
+    color: rgb(5, 26, 107);
+}
+div.loginpill{
+    display: inline-flex;
+    justify-content: end;
+    width: 48%;
+}
+div.col ul li{
+    list-style: none;
+}
+div.col ul li a:hover{
+    background-color: rgba(149, 245, 245, 0.2);
+}
+div.col h5{
+    font-size: 16px;
+    color: gray;
+}
+nav.navbar ul li a{
+    color: gray;
+}
+section#sect1{
+    min-height: 65vh;
+    background-image: url("../images/online_banking1-3_1.medium.medium_quality.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#sect1 div.firstDiv{
+    width: fit-content;
+    background-color: rgba(149, 245, 245, 0.2);
+}
+section#sect1 div.firstDiv p{
+    color: gray;
+}
+section#sect2 ul.firstList{
+    list-style: none;
+}
+section h5{
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+section h5{
+    font-size: 2.1rem;
+    font-weight: lighter;
+}
+section h5.lighter, section h5.light{
+   color: rgb(5, 26, 107);
+}
+section{
+    color: grey;
+}
+div.rgb{
+    background-color: rgba(241, 236, 236, 0.3);
+}
+div.bel{
+    min-height: 450px;
+}
+footer li{
+    list-style: none;
+}
+div.footerNav{
+    width:fit-content;
+}
+@media screen and (max-width: 1260px){
+    div.loginpill{
+            display: inline-flex;
+            justify-content: end;
+            width: 36%;
+    }
+}
